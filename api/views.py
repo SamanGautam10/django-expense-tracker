@@ -14,6 +14,8 @@ from expenses import utils
 from expenses.models import Budget, Expense
 from api.serializers import ExpenseSerializer, BudgetSerializer
 
+from api import ai_insights
+
 # Create your views here.
 
 
@@ -350,3 +352,11 @@ def delete_testuser_data(request):
 
     return Response({'detail': 'Testuser data deleted successfully'},
                     status=status.HTTP_204_NO_CONTENT)
+
+# API View
+@api_view(['GET'])
+def ai_insights_view(request):
+    rows = list(Expense.objects.filter(owner=request.user)
+                .values('date', 'amount', 'category', 'content'))
+    budget = Expense.objects.get_budget(request.user)
+    return Response(ai_insights.get_ai_insights(request.user, rows, budget))

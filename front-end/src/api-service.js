@@ -435,6 +435,17 @@ export class API {
     }
   }
 
+  // AI Insights and Statistics Data
+  static async fetchAIInsights(accessToken, setData) {
+    try {
+      const res = await API._fetch(`${apiUrl}/ai-insights/`, accessToken);
+      if (res.ok) setData(await res.json());
+      else throw new Error("Fetching AI insights failed");
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
   static async fetchStatisticsData(accessToken, setStatisticsData) {
     try {
       const res = await API._fetch(

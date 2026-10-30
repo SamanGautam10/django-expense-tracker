@@ -12,6 +12,8 @@ import BudgetContainer from "../../components/BudgetContainer/BudgetContainer";
 import ExpenseTable from "../../components/ExpenseTable/ExpenseTable";
 import Pagination from "../../components/Pagination/Pagination";
 
+import AIInsights from "../../components/AIInsights/AIInsights";
+
 import LineChart from "../../charts/LineChart/LineChart";
 
 const Home = ({ accessToken }) => {
@@ -71,6 +73,8 @@ const Home = ({ accessToken }) => {
       {expenses.length > 0 && <ExpenseTable expenses={expenses} />}
 
       {expenses.length > 0 && <Pagination setExpenses={setExpenses} />}
+
+      {expenses.length > 0 && <AIInsights accessToken={accessToken} />}
     </>
   );
 };
