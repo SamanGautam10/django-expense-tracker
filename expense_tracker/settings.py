@@ -62,7 +62,7 @@ INSTALLED_APPS = [
     "accounts.apps.AccountsConfig",
     "api.apps.ApiConfig",
 
-
+    "forecasting"
 ]
 
 CURRENCY = "€"

@@ -1,0 +1,9 @@
+.forecast-card { margin: 1.5rem auto; padding: 1rem 1.25rem; max-width: 900px; border: 1px solid #ddd; border-radius: 8px; background: #fff; }
+.forecast-card h5 { margin-bottom: .6rem; }
+.forecast-msg { color: #777; text-align: center; }
+.forecast-headline { display: flex; gap: .75rem; align-items: center; padding: .6rem .8rem; border-radius: 6px; margin-bottom: .75rem; }
+.forecast-arrow { font-size: 1.4rem; }
+.forecast-higher { background: #fdecea; color: #b3261e; }
+.forecast-lower { background: #e8f5e9; color: #1b5e20; }
+.forecast-sub { font-size: .85rem; opacity: .85; }
+.forecast-metrics { font-size: .8rem; color: #555; margin: .6rem 0 0; }

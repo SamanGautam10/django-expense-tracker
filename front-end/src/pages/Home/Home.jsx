@@ -11,6 +11,7 @@ import Instructions from "../../components/Instructions/Instructions";
 import BudgetContainer from "../../components/BudgetContainer/BudgetContainer";
 import ExpenseTable from "../../components/ExpenseTable/ExpenseTable";
 import Pagination from "../../components/Pagination/Pagination";
+import ForecastSection from "../../components/Forecasting/ForecastSection";
 
 import AIInsights from "../../components/AIInsights/AIInsights";
 
@@ -69,6 +70,8 @@ const Home = ({ accessToken }) => {
           yLabel={"(€) Amounts"}
         />
       )}
+
+      {expenses.length > 0 && <ForecastSection accessToken={accessToken} />}
 
       {expenses.length > 0 && <ExpenseTable expenses={expenses} />}
 
