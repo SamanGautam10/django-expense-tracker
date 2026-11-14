@@ -1,0 +1,5 @@
+Pillow>=10.0,<12
+pytesseract>=0.3.10,<1
+python-dateutil>=2.8,<4
+scikit-learn>=1.5,<2
+joblib>=1.4,<2

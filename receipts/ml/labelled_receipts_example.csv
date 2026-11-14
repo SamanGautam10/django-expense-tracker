@@ -1,0 +1,15 @@
+text,category,group
+"Tesco receipt milk eggs bread TOTAL 11.50",Groceries,tesco
+"Sainsburys bananas rice tomatoes TOTAL 17.20",Groceries,sainsburys
+"Uber trip receipt fare 12.50",Taxi fare,uber
+"Local taxi fare 9.00",Taxi fare,local_taxi
+"Apple charger electronics total 15.00",Electronics,apple
+"Currys keyboard mouse total 39.00",Electronics,currys
+"Amazon household online order total 18.00",Online shopping,amazon
+"ASOS clothing online shopping 28.00",Online shopping,asos
+"British Gas bill payment 58.00",Monthly bill,britishgas
+"Broadband monthly internet bill 39.00",Monthly bill,broadband
+"Restaurant food and drinks bar bill total 25.00",Bar tabs,restaurant
+"Cafe coffee tea sandwich total 12.00",Bar tabs,cafe
+"Parking ticket 7.50",Miscellaneous,parking
+"Office stationery pen notebook 4.50",Miscellaneous,stationery

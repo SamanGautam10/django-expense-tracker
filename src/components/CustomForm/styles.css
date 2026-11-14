@@ -1,0 +1,19 @@
+label {
+  float: left;
+}
+
+@media screen and (min-width: 600px) {
+  .form-container {
+    margin: 50px auto 0;
+    max-width: 510px;
+  }
+
+  .form-buttons-container {
+    display: flex;
+    justify-content: space-around !important;
+  }
+
+  .cancel-btn {
+    float: right;
+  }
+}

@@ -462,4 +462,21 @@ export class API {
       console.error(err);
     }
   }
+  
+
+static async fetchForecast(accessToken) {
+  const response = await API._fetch(
+    `${apiUrl}/forecast/`,
+    accessToken
+  );
+
+  if (!response.ok) {
+    throw new Error(
+      `Failed to fetch forecast: ${response.status}`
+    );
+  }
+
+  return await response.json();
+}
+
 }

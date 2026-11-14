@@ -141,7 +141,7 @@ def create_expense(request):
 
 @api_view(['PUT'])
 def update_expense(request, pk):
-    expense = get_object_or_404(Expense, pk=pk)
+    expense = get_object_or_404(Expense, pk=pk, owner=request.user)
     expense_data = {
         'owner': request.user.pk,
         'amount': request.data['amount'],
@@ -160,7 +160,7 @@ def update_expense(request, pk):
 
 @api_view(['DELETE'])
 def delete_expense(request, pk):
-    expense = get_object_or_404(Expense, pk=pk)
+    expense = get_object_or_404(Expense, pk=pk, owner=request.user)
     expense.delete()
     return Response({'detail': 'Expense deleted successfully'},
                     status=status.HTTP_204_NO_CONTENT)

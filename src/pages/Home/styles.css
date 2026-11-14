@@ -1,0 +1,8 @@
+@media screen and (min-width: 600px) {
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: auto;
+  }
+}

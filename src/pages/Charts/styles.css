@@ -1,0 +1,17 @@
+.canvasContainer {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.inlineCanvasContainer {
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+canvas {
+  background-color: white;
+  border-radius: 20px;
+}

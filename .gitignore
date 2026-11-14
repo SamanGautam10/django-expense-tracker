@@ -103,3 +103,7 @@ htmlcov/
 *.swp
 *.swo
 *~
+
+# Private receipt documents and trained artifacts
+private_media/
+receipts/ml/*.joblib

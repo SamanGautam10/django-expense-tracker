@@ -35,6 +35,8 @@ const Navbar = () => {
             Charts & Statistics
           </div>
         </li>
+        <li className="nav-item"><div className="nav-link" onClick={() => navigate("/receipts/upload/")}>Scan Receipt</div></li>
+        <li className="nav-item"><div className="nav-link" onClick={() => navigate("/receipts/")}>Receipt History</div></li>
       </ul>
     </nav>
   );

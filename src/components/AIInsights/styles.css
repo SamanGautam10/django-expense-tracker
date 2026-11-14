@@ -1,0 +1,10 @@
+.ai-card { margin: 1.5rem auto; padding: 1rem 1.25rem; max-width: 900px; border: 1px solid #ddd; border-radius: 8px; background: #fff; }
+.ai-loading { color: #777; text-align: center; }
+.ai-prediction { display: flex; gap: .75rem; align-items: center; padding: .6rem .8rem; border-radius: 6px; margin-bottom: .75rem; }
+.ai-arrow { font-size: 1.4rem; }
+.ai-up { background: #fdecea; color: #b3261e; }
+.ai-down { background: #e8f5e9; color: #1b5e20; }
+.ai-same { background: #f1f1f1; color: #444; }
+.ai-sub { font-size: .85rem; opacity: .8; }
+.ai-tip { background: #fff8e1; padding: .5rem .75rem; border-radius: 6px; }
+.ai-disclaimer { font-size: .75rem; color: #888; margin: .5rem 0 0; }

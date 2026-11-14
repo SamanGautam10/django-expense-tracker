@@ -11,6 +11,9 @@ import Charts from "./pages/Charts/Charts";
 import Error from "./pages/Error/Error";
 
 import Navbar from "./components/Navbar/Navbar";
+import UploadReceipt from "./pages/receipts/UploadReceipt";
+import ReviewReceipt from "./pages/receipts/ReviewReceipt";
+import ReceiptHistory from "./pages/receipts/ReceiptHistory";
 import UserGreet from "./components/UserGreet/UserGreet";
 
 import AddExpenseForm from "./forms/AddExpenseForm/AddExpenseForm";
@@ -67,6 +70,9 @@ function App() {
               />
 
               <Route path='/create-expense/' element={<AddExpenseForm />} />
+              <Route path="/receipts/upload/" element={<UploadReceipt />} />
+              <Route path="/receipts/:id/review/" element={<ReviewReceipt />} />
+              <Route path="/receipts/" element={<ReceiptHistory />} />
               <Route
                 path='/update-expense/:id/'
                 element={<UpdateExpenseForm />}
